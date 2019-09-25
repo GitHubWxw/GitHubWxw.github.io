@@ -317,7 +317,7 @@
 <li>接口必须满足：内部只有一个函数</li>
 </ul>
 <p>其实这样的接口，我们称为函数式接口，我们学过的<code>Runnable</code>、<code>Comparator</code>都是函数式接口的典型代表。但是在实践中，函数接口是非常脆弱的，只要有人在接口里添加多一个方法，那么这个接口就不是函数接口了，就会导致编译失败。Java 8提供了一个特殊的注解<code>@FunctionalInterface</code>来克服上面提到的脆弱性并且显示地表明函数接口。而且jdk8版本中，对很多已经存在的接口都添加了<code>@FunctionalInterface</code>注解，例如<code>Runnable</code>接口：</p>
-<p><img src="img%5Crunnable.png" alt="1"></p>
+<p><img src="/GitHubWxw.github.io/GitHubWxw/GitHubWxw.github/img%5Crunnable.png" alt="1"></p>
 <p>另外，Jdk8默认提供了一些函数式接口供我们使用：</p>
 <h3 id="3-1-Function类型接口"><a href="#3-1-Function类型接口" class="headerlink" title="3.1 Function类型接口"></a>3.1 Function类型接口</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@FunctionalInterface</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Function</span>&lt;<span class="title">T</span>, <span class="title">R</span>&gt; </span>&#123;</span><br><span class="line">	<span class="comment">// 接收一个参数T，返回一个结果R</span></span><br><span class="line">    <span class="function">R <span class="title">apply</span><span class="params">(T t)</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -642,22 +642,22 @@
     <h2 id="0-前言"><a href="#0-前言" class="headerlink" title="0.前言"></a>0.前言</h2><p>一直以来都是以word文档做笔记，存在很多问题，比如代码格式、高亮等。这次公司要求使用markdown，感觉眼前一亮，以前word的问题都得到了解决，而且可以生成电子书，或者直接通过gitbook放到网络中，非常棒。</p>
 <p>但是很多的同事可能与我一样，之前对markdown并不熟悉，所以对语法、typora的快捷键都不太熟悉，因此就有了本文。</p>
 <h2 id="1、基本语法"><a href="#1、基本语法" class="headerlink" title="1、基本语法"></a>1、基本语法</h2><h3 id="1-1-多级标题"><a href="#1-1-多级标题" class="headerlink" title="1.1 多级标题"></a>1.1 多级标题</h3><h4 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h4><p>在Markdown中，如果想将一段文字定义为标题，只需要在这段文字前面加上 <code>#</code>，<strong>再在 <code>#</code> 后加一个空格</strong>即可。还可增加二、三、四、五、六级标题，总共六级。每多一级 ，增加一个 <code>#</code> ，标题字号相应降低一级。如图：</p>
-<p><img src="img%5Ctitle.png" alt></p>
+<p><img src="/GitHubWxw.github.io/GitHubWxw/GitHubWxw.github/img%5Ctitle.png" alt></p>
 <h4 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h4><p>在typora中，1级标题对应的快捷键是：<code>CTRL + 1</code> ，其它级别分别对应2~6的数字即可</p>
 <h3 id="1-2-列表"><a href="#1-2-列表" class="headerlink" title="1.2 列表"></a>1.2 列表</h3><h4 id="语法说明"><a href="#语法说明" class="headerlink" title="语法说明"></a>语法说明</h4><p>列表格式也很常用，它可以让你的文稿变得井井有条。在 Markdown 中，你只需要在文字前面加上 <code>-</code> 就可以了；如果你希望是有序列表，在文字前面加上 <code>1. 或2. 或3.</code> 即可。</p>
 <p>注意：无论是<code>-</code> 还是 <code>1.</code>都需要在后面跟上一个空格</p>
-<p><img src="img/list.png" alt="多级列表"></p>
+<p><img src="/GitHubWxw.github.io/GitHubWxw/GitHubWxw.github/list.png" alt="多级列表"></p>
 <h4 id="快捷键-1"><a href="#快捷键-1" class="headerlink" title="快捷键"></a>快捷键</h4><p>typora中并没有对应快捷键，不过在菜单中有对应选项：</p>
-<p><img src="img/list-menu.png" alt="1523755334687"></p>
+<p><img src="/GitHubWxw.github.io/GitHubWxw/GitHubWxw.github/list-menu.png" alt="1523755334687"></p>
 <h3 id="1-3-引用"><a href="#1-3-引用" class="headerlink" title="1.3 引用"></a>1.3 引用</h3><h4 id="语法说明-1"><a href="#语法说明-1" class="headerlink" title="语法说明"></a>语法说明</h4><p>如果你需要在文稿中引用一段别处的句子，那么就要用到「引用」格式。</p>
 <p>在引用文字前加上 <code>&gt;</code> 并与文字保留一个字符的空格即可。如图：</p>
-<p><img src="img/other.png" alt="1523754363834"></p>
+<p><img src="/GitHubWxw.github.io/GitHubWxw/GitHubWxw.github/other.png" alt="1523754363834"></p>
 <h4 id="快捷键-2"><a href="#快捷键-2" class="headerlink" title="快捷键"></a>快捷键</h4><p>typora中的快捷键是：<code>CTRL+SHIFT+Q</code></p>
 <h3 id="1-4-粗体和斜体"><a href="#1-4-粗体和斜体" class="headerlink" title="1.4 粗体和斜体"></a>1.4 粗体和斜体</h3><h4 id="语法说明-2"><a href="#语法说明-2" class="headerlink" title="语法说明"></a>语法说明</h4><p>Markdown 的粗体和斜体也非常简单：</p>
 <p>用两个 <code>*</code> 包含一段文本就是粗体的语法；</p>
 <p>用一个 <code>*</code> 包含一段文本就是斜体的语法。</p>
 <p>如图：</p>
-<p><img src="img/bold.png" alt="1523754426178"></p>
+<p><img src="/GitHubWxw.github.io/GitHubWxw/GitHubWxw.github/bold.png" alt="1523754426178"></p>
 <h4 id="快捷键-3"><a href="#快捷键-3" class="headerlink" title="快捷键"></a>快捷键</h4><p>typora中的快捷键：</p>
 <p>​    粗体：<code>Ctrl + B</code></p>
 <p>​    斜体：<code>Ctrl + I</code></p>
@@ -665,22 +665,22 @@
 <h3 id="1-5-链接"><a href="#1-5-链接" class="headerlink" title="1.5 链接"></a>1.5 链接</h3><h4 id="语法说明-3"><a href="#语法说明-3" class="headerlink" title="语法说明"></a>语法说明</h4><p>在 Markdown 中，插入链接的语法如下：</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">链接文本</span>](<span class="link">链接地址</span>)</span><br></pre></td></tr></table></figure>
 
-<p><img src="img/link.png" alt="1523754809816"></p>
+<p><img src="/GitHubWxw.github.io/GitHubWxw/GitHubWxw.github/link.png" alt="1523754809816"></p>
 <h4 id="快捷键-4"><a href="#快捷键-4" class="headerlink" title="快捷键"></a>快捷键</h4><p>typora中的快捷键是：<code>Ctrl + K</code></p>
 <h3 id="1-6-图片"><a href="#1-6-图片" class="headerlink" title="1.6 图片"></a>1.6 图片</h3><h4 id="语法说明-4"><a href="#语法说明-4" class="headerlink" title="语法说明"></a>语法说明</h4><p>在 Markdown 中，插入图片的语法如下：</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">图片说明文字</span>](<span class="link">链接地址</span>)</span><br></pre></td></tr></table></figure>
 
-<p><img src="img/image.png" alt="1523754923316"></p>
+<p><img src="/GitHubWxw.github.io/GitHubWxw/GitHubWxw.github/image.png" alt="1523754923316"></p>
 <h4 id="快捷键-5"><a href="#快捷键-5" class="headerlink" title="快捷键"></a>快捷键</h4><p>typora中的快捷键是：<code>Ctrl + Shift + I</code></p>
 <h3 id="1-7-分割线"><a href="#1-7-分割线" class="headerlink" title="1.7 分割线"></a>1.7 分割线</h3><p>分割线的语法只需要另起一行，连续输入三个星号 *** 即可分割两段文字内容。</p>
-<p><img src="img/divider.png" alt="1523755021744"></p>
+<p><img src="/GitHubWxw.github.io/GitHubWxw/GitHubWxw.github/divider.png" alt="1523755021744"></p>
 <h3 id="1-8-表格"><a href="#1-8-表格" class="headerlink" title="1.8 表格"></a>1.8 表格</h3><p>表格输入相对复杂，推荐使用工具自带功能实现</p>
-<h4 id="语法说明-5"><a href="#语法说明-5" class="headerlink" title="语法说明"></a>语法说明</h4><p><img src="img/table.png" alt="1523755747300"></p>
+<h4 id="语法说明-5"><a href="#语法说明-5" class="headerlink" title="语法说明"></a>语法说明</h4><p><img src="/GitHubWxw.github.io/GitHubWxw/GitHubWxw.github/table.png" alt="1523755747300"></p>
 <h4 id="快捷键-6"><a href="#快捷键-6" class="headerlink" title="快捷键"></a>快捷键</h4><p>typora的快捷键：<code>Ctrl + T</code></p>
 <p>弹出菜单：</p>
-<p><img src="img/table-menu.png" alt></p>
+<p><img src="/GitHubWxw.github.io/GitHubWxw/GitHubWxw.github/table-menu.png" alt></p>
 <p>生成的表格：</p>
-<p><img src="img/table-image.png" alt></p>
+<p><img src="/GitHubWxw.github.io/GitHubWxw/GitHubWxw.github/table-image.png" alt></p>
 <h3 id="1-9-代码高亮"><a href="#1-9-代码高亮" class="headerlink" title="1.9 代码高亮"></a>1.9 代码高亮</h3><h4 id="语法说明-6"><a href="#语法说明-6" class="headerlink" title="语法说明"></a>语法说明</h4><p>行内代码块：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`代码`</span><br></pre></td></tr></table></figure>
 
@@ -705,15 +705,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">markdown</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语法</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">入门</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">markdown</a>
         		</li>
       		
 		</ul>
@@ -824,15 +824,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语法</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">入门</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
         		</li>
       		
 		</ul>
@@ -946,15 +946,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">markdown</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语法</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">入门</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">markdown</a>
         		</li>
       		
 		</ul>
@@ -1117,7 +1117,7 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1129,7 +1129,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
               <li class="article-tag-list-item">
