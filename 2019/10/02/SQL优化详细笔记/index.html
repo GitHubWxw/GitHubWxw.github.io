@@ -18,18 +18,17 @@
 <meta property="og:site_name" content="年少轻狂">
 <meta property="og:description" content="6. 优化案例 单表优化 两表优化 三表优化">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://github.com/GitHubWxw.github.io//github.com/GitHubWxw/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/%E4%BC%98%E5%8C%96%E5%88%B0ref%E7%BA%A7%E5%88%AB.png">
-<meta property="og:image" content="https://github.com/GitHubWxw.github.io//github.com/GitHubWxw/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/2%E5%BC%A0%E8%A1%A8%E4%BC%98%E5%8C%96.png">
-<meta property="og:image" content="https://github.com/GitHubWxw.github.io//github.com/GitHubWxw/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/%E4%B8%A4%E8%A1%A8%E5%B7%A6%E8%BF%9E%E6%8E%A5%E4%BC%98%E5%8C%96.png">
-<meta property="og:image" content="https://github.com/GitHubWxw.github.io//github.com/GitHubWxw/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/%E4%B8%A4%E8%A1%A8%E5%B7%A6%E8%BF%9E%E6%8E%A5%E4%BC%98%E5%8C%96%E5%8A%A0%E7%B4%A2%E5%BC%95.png">
-<meta property="og:image" content="https://github.com/GitHubWxw.github.io//github.com/GitHubWxw/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/%E5%8F%8C%E8%B7%AF%E6%8E%92%E5%BA%8F%E5%92%8C%E5%8D%95%E8%B7%AF%E6%8E%92%E5%BA%8F.png">
-<meta property="og:image" content="https://github.com/GitHubWxw.github.io//github.com/GitHubWxw/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/%E8%A1%8C%E9%94%81.png">
-<meta property="og:image" content="https://github.com/GitHubWxw.github.io//github.com/GitHubWxw/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6.png">
-<meta property="og:updated_time" content="2019-10-03T06:56:56.653Z">
+<meta property="og:image" content="https://github.com/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/优化到ref级别.png">
+<meta property="og:image" content="https://github.com/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/2张表优化.png">
+<meta property="og:image" content="https://github.com/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/两表左连接优化.png">
+<meta property="og:image" content="https://github.com/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/两表左连接优化加索引.png">
+<meta property="og:image" content="https://github.com/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/行锁.png">
+<meta property="og:image" content="https://github.com/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/主从复制.png">
+<meta property="og:updated_time" content="2019-10-04T04:56:29.801Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MySQL优化案例">
 <meta name="twitter:description" content="6. 优化案例 单表优化 两表优化 三表优化">
-<meta name="twitter:image" content="https://github.com/GitHubWxw.github.io//github.com/GitHubWxw/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/%E4%BC%98%E5%8C%96%E5%88%B0ref%E7%BA%A7%E5%88%AB.png">
+<meta name="twitter:image" content="https://github.com/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/优化到ref级别.png">
   
     <link rel="alternative" href="/GitHubWxw.github.io/atom.xml" title="年少轻狂" type="application/atom+xml">
   
@@ -296,7 +295,8 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">drop index idx_tab on book;</span><br><span class="line">	alter table book add index idx_atb (authorid,typeid,bid);</span><br><span class="line">	explain select bid from book where  authorid=1 and  typeid in(2,3) order by typeid desc ;</span><br></pre></td></tr></table></figure>
 
 <p>优化结果：达到——ref级别</p>
-<p><img src="/GitHubWxw.github.io//github.com/GitHubWxw/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/%E4%BC%98%E5%8C%96%E5%88%B0ref%E7%BA%A7%E5%88%AB.png" alt></p>
+<img src="/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/优化到ref级别.png" title="优化到ref级别">
+
 <p><strong>– 小结</strong></p>
 <ul>
 <li>1.最佳做前缀，保持索引的定义和使用的顺序一致性</li>
@@ -306,7 +306,8 @@
 <p>注意：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">本例中同时出现了Using where（需要回原表）;</span><br><span class="line">               Using index（不需要回原表）：</span><br><span class="line">原因，where  authorid=1 and  typeid in(2,3)中authorid在索引(authorid,typeid,bid)中，因此不需要回原表（直接在索引表中能查到）；</span><br><span class="line">  </span><br><span class="line">typeid虽然也在索引(authorid,typeid,bid)中，但是含in的范围查询已经使该typeid索引失效，因此相当于没有    typeid这个索引，所以需要回原表（using where）；</span><br><span class="line"> </span><br><span class="line">例如以下没有了In，则不会出现using where</span><br><span class="line">	explain select bid from book where  authorid=1 and  typeid =3 order by typeid desc ;</span><br><span class="line"></span><br><span class="line">还可以通过key_len证明In可以使索引失效。</span><br></pre></td></tr></table></figure>
 
-<h4 id="2-两表优化"><a href="#2-两表优化" class="headerlink" title="(2) 两表优化"></a>(2) 两表优化</h4><p><img src="/GitHubWxw.github.io//github.com/GitHubWxw/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/2%E5%BC%A0%E8%A1%A8%E4%BC%98%E5%8C%96.png" alt="两表优化"></p>
+<h4 id="2-两表优化"><a href="#2-两表优化" class="headerlink" title="(2) 两表优化"></a>(2) 两表优化</h4> <img src="/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/2张表优化.png">
+
 <blockquote>
 <p>创建表的sql语句</p>
 </blockquote>
@@ -326,7 +327,8 @@
 
 <p><strong>以上2个FOR循环，最终都会循环3000次；但是 对于双层循环来说：一般建议 将数据小的循环 放外层；数据大的循环放内存</strong></p>
 <p><strong>(2) 优化过程</strong></p>
-<p><img src="/GitHubWxw.github.io//github.com/GitHubWxw/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/%E4%B8%A4%E8%A1%A8%E5%B7%A6%E8%BF%9E%E6%8E%A5%E4%BC%98%E5%8C%96.png" alt="两表左连接优化"></p>
+<img src="/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/两表左连接优化.png">
+
 <ul>
 <li><p>当编写 ..on t.cid=c.cid 时，将数据量小的表 放左边（假设此时t表数据量小）</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">alter table teacher2 add index index_teacher2_cid(cid) ;</span><br><span class="line">alter table course2 add index index_course2_cname(cname);</span><br></pre></td></tr></table></figure>
@@ -335,7 +337,8 @@
 </li>
 </ul>
 <p>优化后的ref级别：</p>
-<p><img src="/GitHubWxw.github.io//github.com/GitHubWxw/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/%E4%B8%A4%E8%A1%A8%E5%B7%A6%E8%BF%9E%E6%8E%A5%E4%BC%98%E5%8C%96%E5%8A%A0%E7%B4%A2%E5%BC%95.png" alt="两表左连接优化加索引"></p>
+<img src="/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/两表左连接优化加索引.png">
+
 <h4 id="3-三表优化"><a href="#3-三表优化" class="headerlink" title="(3) 三表优化"></a>(3) 三表优化</h4><ul>
 <li>三张表优化A B C</li>
 <li>1,小表驱动大表</li>
@@ -431,7 +434,8 @@
 <li>原因：如果数据量特别大，则无法 将所有字段的数据 一次性读取完毕，因此 会进行“分片读取、多次读取”。</li>
 </ul>
 </blockquote>
-<p><img src="/GitHubWxw.github.io//github.com/GitHubWxw/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/%E5%8F%8C%E8%B7%AF%E6%8E%92%E5%BA%8F%E5%92%8C%E5%8D%95%E8%B7%AF%E6%8E%92%E5%BA%8F.png" alt="双路排序和单路排序"></p>
+{% asset_img  双路排序和单路排序.png%}
+
 <p>注意：</p>
 <ul>
 <li><p>1，单路排序 比双路排序 会占用更多的buffer。</p>
@@ -680,7 +684,8 @@
 <ul>
 <li>为了研究行锁，暂时将自动commit关闭;  set autocommit =0 ; 以后需要通过commit</li>
 </ul>
-<p><img src="/GitHubWxw.github.io//github.com/GitHubWxw/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/%E8%A1%8C%E9%94%81.png" alt="行锁"></p>
+<img src="/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/行锁.png">
+
 <p><strong>会话0：</strong>写操作</p>
 <p>​      <code>insert into linelock values(    &#39;a6&#39;) ;</code></p>
 <p><strong>会话1：</strong> 写操作 同样的数据</p>
@@ -790,7 +795,8 @@
 <li><p>如果仍然报错：可能是防火墙没关闭 ：  在B关闭防火墙  service iptables stop </p>
 </li>
 </ul>
-<h4 id="2-实现主从复制"><a href="#2-实现主从复制" class="headerlink" title="(2) 实现主从复制"></a>(2) 实现主从复制</h4><p><img src="/GitHubWxw.github.io//github.com/GitHubWxw/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6.png" alt="主从复制"></p>
+<h4 id="2-实现主从复制"><a href="#2-实现主从复制" class="headerlink" title="(2) 实现主从复制"></a>(2) 实现主从复制</h4><img src="/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/主从复制.png">
+
 <p>1.master将改变的数 记录在本地的 二进制日志中（binary log） ；该过程 称之为：二进制日志件事<br>2.slave将master的binary log拷贝到自己的 relay log（中继日志文件）中<br>3.中继日志事件，将数据读取到自己的数据库之中</p>
 <ul>
 <li>MYSQL主从复制 是异步的，串行化的， 有延迟</li>
