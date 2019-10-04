@@ -18,12 +18,12 @@
 <meta property="og:site_name" content="年少轻狂">
 <meta property="og:description" content="JDK1.8的新特性1. 前言JDK1.8已经发布很久了，在很多企业中都已经在使用。并且Spring5、SpringBoot2.0都推荐使用JDK1.8以上版本。所以我们必须与时俱进，拥抱变化。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://github.com/GitHubWxw.github.io/GitHubWxw/GitHubWxw.github/img%5Crunnable.png">
+<meta property="og:image" content="https://github.com/GitHubWxw.github.io//github.com/GitHubWxw/GitHubWxw.github.io/2019/09/22/jdk8新特性/img%5Crunnable.png">
 <meta property="og:updated_time" content="2019-10-02T10:15:48.633Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JDK1.8的新特性">
 <meta name="twitter:description" content="JDK1.8的新特性1. 前言JDK1.8已经发布很久了，在很多企业中都已经在使用。并且Spring5、SpringBoot2.0都推荐使用JDK1.8以上版本。所以我们必须与时俱进，拥抱变化。">
-<meta name="twitter:image" content="https://github.com/GitHubWxw.github.io/GitHubWxw/GitHubWxw.github/img%5Crunnable.png">
+<meta name="twitter:image" content="https://github.com/GitHubWxw.github.io//github.com/GitHubWxw/GitHubWxw.github.io/2019/09/22/jdk8新特性/img%5Crunnable.png">
   
     <link rel="alternative" href="/GitHubWxw.github.io/atom.xml" title="年少轻狂" type="application/atom+xml">
   
@@ -327,7 +327,7 @@
 <li>接口必须满足：内部只有一个函数</li>
 </ul>
 <p>其实这样的接口，我们称为函数式接口，我们学过的<code>Runnable</code>、<code>Comparator</code>都是函数式接口的典型代表。但是在实践中，函数接口是非常脆弱的，只要有人在接口里添加多一个方法，那么这个接口就不是函数接口了，就会导致编译失败。Java 8提供了一个特殊的注解<code>@FunctionalInterface</code>来克服上面提到的脆弱性并且显示地表明函数接口。而且jdk8版本中，对很多已经存在的接口都添加了<code>@FunctionalInterface</code>注解，例如<code>Runnable</code>接口：</p>
-<p><img src="/GitHubWxw.github.io/GitHubWxw/GitHubWxw.github/img%5Crunnable.png" alt="1"></p>
+<p><img src="/GitHubWxw.github.io//github.com/GitHubWxw/GitHubWxw.github.io/2019/09/22/jdk8新特性/img%5Crunnable.png" alt="1"></p>
 <p>另外，Jdk8默认提供了一些函数式接口供我们使用：</p>
 <h3 id="3-1-Function类型接口"><a href="#3-1-Function类型接口" class="headerlink" title="3.1 Function类型接口"></a>3.1 Function类型接口</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@FunctionalInterface</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Function</span>&lt;<span class="title">T</span>, <span class="title">R</span>&gt; </span>&#123;</span><br><span class="line">	<span class="comment">// 接收一个参数T，返回一个结果R</span></span><br><span class="line">    <span class="function">R <span class="title">apply</span><span class="params">(T t)</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
