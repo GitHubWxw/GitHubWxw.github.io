@@ -6,22 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://github.com/GitHubWxw/GitHubWxw.github.io">
-  <title>发布后样式加载不出来的问题 | 年少轻狂</title>
+  <title>年少轻狂</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="使用HEXO+GITHUB PAGES搭建个人博客，在本地服务器没有任何问题，但是在外网访问页面样式加载不出来。">
-<meta name="keywords" content="markdown,语法,入门">
-<meta property="og:type" content="article">
-<meta property="og:title" content="发布后样式加载不出来的问题">
-<meta property="og:url" content="https://github.com/GitHubWxw/GitHubWxw.github.io/2017/05/26/静态样式加载不出来/index.html">
+  <meta name="description" content="年少有伟_个人简历">
+<meta name="keywords" content="年少有为,年少有伟_技术博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="年少轻狂">
+<meta property="og:url" content="https://github.com/GitHubWxw/GitHubWxw.github.io/Resume/index.html">
 <meta property="og:site_name" content="年少轻狂">
-<meta property="og:description" content="使用HEXO+GITHUB PAGES搭建个人博客，在本地服务器没有任何问题，但是在外网访问页面样式加载不出来。">
+<meta property="og:description" content="年少有伟_个人简历">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-02T10:16:15.450Z">
+<meta property="og:updated_time" content="2019-10-05T09:45:26.408Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="发布后样式加载不出来的问题">
-<meta name="twitter:description" content="使用HEXO+GITHUB PAGES搭建个人博客，在本地服务器没有任何问题，但是在外网访问页面样式加载不出来。">
+<meta name="twitter:title" content="年少轻狂">
+<meta name="twitter:description" content="年少有伟_个人简历">
   
     <link rel="alternative" href="/GitHubWxw.github.io/atom.xml" title="年少轻狂" type="application/atom+xml">
   
@@ -209,79 +209,15 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-静态样式加载不出来" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
   <div class="article-inner">
     
-      <header class="article-header">
-  
-  
-    <h1 class="article-title" itemprop="name">
-      发布后样式加载不出来的问题
-    </h1>
-  
-
-
-  
-  
-        
-        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
-              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
-        </span>
-
-<a href="/GitHubWxw.github.io/2017/05/26/静态样式加载不出来/" class="archive-article-date">
-        <time datetime="2017-05-26T04:12:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-26</time>
-</a>
-
-  
-  
-    
-<div style="margin-top:10px;">
-  <span class="post-time">
-    <span class="post-meta-item-icon">
-      <!-- fonts.scss -->
-      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
-      <i class="icon-statistics"></i>
-      <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">227字</span>
-    </span>
-  </span>
-
-  <span class="post-time">
-    &nbsp; | &nbsp;
-    <span class="post-meta-item-icon">
-      <i class="icon-book icon"></i>
-      <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">1分</span>
-    </span>
-  </span>
-</div>
-
-
-  
-  </header>
-  
   <div class="article-entry" itemprop="articleBody">
     
      
       
-    <p>使用HEXO+GITHUB PAGES搭建个人博客，在本地服务器没有任何问题，但是在外网访问页面样式加载不出来。</p>
-<a id="more"></a>
-<h3 id="因为需要修改-CONFIG-YML文件中的网址和网站根目录"><a href="#因为需要修改-CONFIG-YML文件中的网址和网站根目录" class="headerlink" title="因为需要修改_CONFIG.YML文件中的网址和网站根目录"></a>因为需要修改_CONFIG.YML文件中的网址和网站根目录</h3><hr>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">bash:</span><br><span class="line"> # URL&lt;br&gt;</span><br><span class="line"> ## If your site is put in a subdirectory, set url as &apos;http://yoursite.com/child&apos; and &lt;br&gt;root as &apos;/child/&apos;&lt;br&gt;</span><br><span class="line"> url: https://banjingwei.github.io/ban.github.io&lt;br&gt;</span><br><span class="line"> root: /ban.github.io/&lt;br&gt;</span><br><span class="line"> permalink: :year/:month/:day/:title/&lt;br&gt;</span><br><span class="line"> permalink_defaults:&lt;br&gt;</span><br></pre></td></tr></table></figure>
-
-<p>More info: 提示内容如下：</p>
-<blockquote>
-<p>如果您的网站存放在子目录中，例如 HTTP://YOURSITE.COM/BLOG，则请将您的 URL 设为 <br><br><a href="HTTP://YOURSITE.COM/BLOG" target="_blank" rel="noopener">HTTP://YOURSITE.COM/BLOG</a> 并把 ROOT 设为 /BLOG/。</p>
-</blockquote>
-<h3 id="使用GITHUB-PAGES搭建博客，网址就是："><a href="#使用GITHUB-PAGES搭建博客，网址就是：" class="headerlink" title="使用GITHUB PAGES搭建博客，网址就是："></a>使用GITHUB PAGES搭建博客，网址就是：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ https://github.com/GitHubWxw/GitHubWxw.github.io</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>也就是GITHUB PAGES分配给我们的网址<br>根目录：/GitHubWxw.github.io/是搭建博客仓库的名称</p>
-</blockquote>
-<p><code>root: /GitHubWxw.github.io/</code></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-
+    <!DOCTYPE html><html><head><meta charset="utf-8"><title>年少有伟_个人简历</title>
+  <meta name="generator" content="hexo-theme-yilia-plus"><meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1"><link href="/Resume/static/css/app.13c62d62f36b7d6e046f1aaf9c790a62.css" rel="stylesheet"></head><body><div id="app"></div><script type="text/javascript" src="/Resume/static/js/manifest.4f9042a67a1256233917.js"></script><script type="text/javascript" src="/Resume/static/js/vendor.7d5595d162891aa59b23.js"></script><script type="text/javascript" src="/Resume/static/js/app.bfd9008a38aba7717d7b.js"></script></body></html>
     
 
     
@@ -327,7 +263,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="https://github.com/GitHubWxw/GitHubWxw.github.io/2017/05/26/静态样式加载不出来/" title="发布后样式加载不出来的问题" target="_blank">https://github.com/GitHubWxw/GitHubWxw.github.io/2017/05/26/静态样式加载不出来/</a>
+          <a href="https://github.com/GitHubWxw/GitHubWxw.github.io/Resume/index.html" title="" target="_blank">https://github.com/GitHubWxw/GitHubWxw.github.io/Resume/index.html</a>
         </li>
         <li>
           <strong>版权声明： </strong>
@@ -341,37 +277,7 @@
   <div class="article-info article-info-index">
     
     
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">markdown</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">入门</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
     
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/GitHubWxw.github.io/categories/bug收纳筐//" class="article-tag-list-link color2">bug收纳筐</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
 
     
 
@@ -421,7 +327,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://github.com/GitHubWxw/GitHubWxw.github.io/2017/05/26/静态样式加载不出来/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://github.com/GitHubWxw/GitHubWxw.github.io/Resume/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -433,20 +339,6 @@
   </div>
 </article>
 
-
-<nav id="article-nav">
-  
-    <a href="/GitHubWxw.github.io/2019/09/15/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Hello World
-        
-      </div>
-    </a>
-  
-  
-</nav>
 
 
 <aside class="wrap-side-operation">
@@ -469,7 +361,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#因为需要修改-CONFIG-YML文件中的网址和网站根目录"><span class="toc-number">1.</span> <span class="toc-text">因为需要修改_CONFIG.YML文件中的网址和网站根目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用GITHUB-PAGES搭建博客，网址就是："><span class="toc-number">2.</span> <span class="toc-text">使用GITHUB PAGES搭建博客，网址就是：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">3.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol>
+                    目录，不存在的…
                     </div>
                 </span>
             </div>
@@ -493,9 +385,9 @@
     <script src="/GitHubWxw.github.io/lib/giteement.browser.js"></script>
   
   <script>
-  <!-- id: "发布后样式加载不出来的问题" -->
+  <!-- id: "" -->
   var giteement = new Giteement({
-    id: '20170526121257',
+    id: '20191005174526',
     owner: 'JavaStudyWxw',
     repo: 'YiliaPlus-ThemeComments',
     backcall_uri: 'https://githubwxw.github.io',
@@ -553,7 +445,7 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
