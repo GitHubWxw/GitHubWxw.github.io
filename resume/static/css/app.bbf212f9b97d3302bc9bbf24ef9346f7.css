@@ -41,17 +41,17 @@ to {
 *::before{box-sizing: border-box;}
 *::after{box-sizing: border-box;}
 #app[data-v-0d459f51] {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-height: 100vh; position: relative;
+  min-height: 100vh;
+  position: relative;
 }
 html[data-v-0d459f51] {
   min-height: 100vh;
 }
-*[data-v-0d459f51]{
+*[data-v-0d459f51] {
   box-sizing: border-box;
 }
 
-
-/*# sourceMappingURL=app.d87743c8ee006a2e8d0c13e4aa95b182.css.map*/
+/*# sourceMappingURL=app.bbf212f9b97d3302bc9bbf24ef9346f7.css.map*/
