@@ -6,21 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://github.com/GitHubWxw/GitHubWxw.github.io">
-  <title>Category: 数据库-mysql | 年少轻狂</title>
+  <title>年少轻狂</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="年少有伟_技术博客">
+  <meta name="description" content="MySQlL的基本使用 | 年少有伟                                            年少有伟   首页后端技术   算法与数据结构JVM虚拟机 垃圾回收算法Java并发编程 MySQL基础数据库技术 SQL优化笔记MySQL基础Spring MySQL基础 SpringBoot 微服务技术 Linux前端技术   工具框">
 <meta name="keywords" content="年少有为,年少有伟_技术博客">
 <meta property="og:type" content="website">
 <meta property="og:title" content="年少轻狂">
-<meta property="og:url" content="https://github.com/GitHubWxw/GitHubWxw.github.io/categories/数据库-mysql/index.html">
+<meta property="og:url" content="https://github.com/GitHubWxw/GitHubWxw.github.io/HomeWeb/Java/数据库技术/MySql基础.html">
 <meta property="og:site_name" content="年少轻狂">
-<meta property="og:description" content="年少有伟_技术博客">
+<meta property="og:description" content="MySQlL的基本使用 | 年少有伟                                            年少有伟   首页后端技术   算法与数据结构JVM虚拟机 垃圾回收算法Java并发编程 MySQL基础数据库技术 SQL优化笔记MySQL基础Spring MySQL基础 SpringBoot 微服务技术 Linux前端技术   工具框">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-11-23T06:37:39.216Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="年少轻狂">
-<meta name="twitter:description" content="年少有伟_技术博客">
+<meta name="twitter:description" content="MySQlL的基本使用 | 年少有伟                                            年少有伟   首页后端技术   算法与数据结构JVM虚拟机 垃圾回收算法Java并发编程 MySQL基础数据库技术 SQL优化笔记MySQL基础Spring MySQL基础 SpringBoot 微服务技术 Linux前端技术   工具框">
   
     <link rel="alternative" href="/GitHubWxw.github.io/atom.xml" title="年少轻狂" type="application/atom+xml">
   
@@ -208,88 +209,285 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+  <div class="article-entry" itemprop="articleBody">
     
+     
       
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/GitHubWxw.github.io/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
+    <!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MySQlL的基本使用 | 年少有伟</title>
+  <meta name="generator" content="hexo-theme-yilia-plus">
+    <meta name="description" content="技术笔记记录首页">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <link rel="icon" href="./favicon.ico">
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/" class="archive-article-date">
-        <time datetime="2019-10-02T10:03:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-02</time>
-</a>
+    <link rel="preload" href="/HomeWeb/assets/css/0.styles.aa16be0c.css" as="style"><link rel="preload" href="/HomeWeb/assets/js/app.447b4c85.js" as="script"><link rel="preload" href="/HomeWeb/assets/js/3.ed0b4588.js" as="script"><link rel="preload" href="/HomeWeb/assets/js/12.40f7ab5c.js" as="script"><link rel="prefetch" href="/HomeWeb/assets/js/1.921dcaa7.js"><link rel="prefetch" href="/HomeWeb/assets/js/10.7c685e74.js"><link rel="prefetch" href="/HomeWeb/assets/js/11.e7c2fdb3.js"><link rel="prefetch" href="/HomeWeb/assets/js/13.aee30b7f.js"><link rel="prefetch" href="/HomeWeb/assets/js/14.9f233b22.js"><link rel="prefetch" href="/HomeWeb/assets/js/15.171c33c3.js"><link rel="prefetch" href="/HomeWeb/assets/js/16.c3956e28.js"><link rel="prefetch" href="/HomeWeb/assets/js/17.dbbde264.js"><link rel="prefetch" href="/HomeWeb/assets/js/18.13c7e53f.js"><link rel="prefetch" href="/HomeWeb/assets/js/19.45ce4146.js"><link rel="prefetch" href="/HomeWeb/assets/js/4.503d5976.js"><link rel="prefetch" href="/HomeWeb/assets/js/5.5303755e.js"><link rel="prefetch" href="/HomeWeb/assets/js/6.6089ff1a.js"><link rel="prefetch" href="/HomeWeb/assets/js/7.8e1b72ca.js"><link rel="prefetch" href="/HomeWeb/assets/js/8.8653dd95.js"><link rel="prefetch" href="/HomeWeb/assets/js/9.23ff1c49.js">
+    <link rel="stylesheet" href="/HomeWeb/assets/css/0.styles.aa16be0c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewbox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"/></svg></div> <a href="/HomeWeb/" class="home-link router-link-active"><!----> <span class="site-name">年少有伟</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/HomeWeb/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">后端技术</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/HomeWeb/Java/算法与数据结构/" class="nav-link">算法与数据结构</a></li><li class="dropdown-item"><h4>JVM虚拟机</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/HomeWeb/Java/JVM虚拟机/垃圾回收算法.html" class="nav-link">垃圾回收算法</a></li></ul></li><li class="dropdown-item"><h4>Java并发编程</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/HomeWeb/Java/数据库技术/MySql基础.html" class="nav-link">MySQL基础</a></li></ul></li><li class="dropdown-item"><h4>数据库技术</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/HomeWeb/Java/数据库技术/SQL优化笔记.html" class="nav-link">SQL优化笔记</a></li><li class="dropdown-subitem"><a href="/HomeWeb/Java/数据库技术/MySql基础.html" class="nav-link">MySQL基础</a></li></ul></li><li class="dropdown-item"><h4>Spring</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/HomeWeb/Java/数据库技术/MySql基础.html" class="nav-link">MySQL基础</a></li></ul></li><li class="dropdown-item"><!----> <a href="/HomeWeb/Java/SpringBoot/springboot基础入门.html" class="nav-link">SpringBoot</a></li><li class="dropdown-item"><!----> <a href="/HomeWeb/Java/微服务技术/" class="nav-link">微服务技术</a></li><li class="dropdown-item"><!----> <a href="/HomeWeb/Java/Linux/" class="nav-link">Linux</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端技术</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/HomeWeb/Web/工具框架/" class="nav-link">工具框架</a></li><li class="dropdown-item"><!----> <a href="/HomeWeb/Web/VUE/" class="nav-link">VUE</a></li><li class="dropdown-item"><!----> <a href="/HomeWeb/Web/JavaScript/" class="nav-link">JavaScript</a></li><li class="dropdown-item"><!----> <a href="/HomeWeb/Web/Html&amp;CSS/" class="nav-link">Html&amp;CSS</a></li><li class="dropdown-item"><!----> <a href="/HomeWeb/Web/前端小知识/" class="nav-link">前端小知识</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/HomeWeb/projects/乐优商城介绍.html" class="nav-link"></a></li><li class="dropdown-item"><!----> <a href="/HomeWeb/projects/乐优商城介绍.html" class="nav-link">（1）乐优商城项目</a></li></ul></div></div><div class="nav-item"><a href="/HomeWeb/guide/" class="nav-link">友链</a></div> <a href="https://github.com/GitHubWxw/HomeWeb" target="_blank" rel="noopener noreferrer" class="repo-link">
+    HomeWeb
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"/> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"/></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/HomeWeb/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">后端技术</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/HomeWeb/Java/算法与数据结构/" class="nav-link">算法与数据结构</a></li><li class="dropdown-item"><h4>JVM虚拟机</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/HomeWeb/Java/JVM虚拟机/垃圾回收算法.html" class="nav-link">垃圾回收算法</a></li></ul></li><li class="dropdown-item"><h4>Java并发编程</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/HomeWeb/Java/数据库技术/MySql基础.html" class="nav-link">MySQL基础</a></li></ul></li><li class="dropdown-item"><h4>数据库技术</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/HomeWeb/Java/数据库技术/SQL优化笔记.html" class="nav-link">SQL优化笔记</a></li><li class="dropdown-subitem"><a href="/HomeWeb/Java/数据库技术/MySql基础.html" class="nav-link">MySQL基础</a></li></ul></li><li class="dropdown-item"><h4>Spring</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/HomeWeb/Java/数据库技术/MySql基础.html" class="nav-link">MySQL基础</a></li></ul></li><li class="dropdown-item"><!----> <a href="/HomeWeb/Java/SpringBoot/springboot基础入门.html" class="nav-link">SpringBoot</a></li><li class="dropdown-item"><!----> <a href="/HomeWeb/Java/微服务技术/" class="nav-link">微服务技术</a></li><li class="dropdown-item"><!----> <a href="/HomeWeb/Java/Linux/" class="nav-link">Linux</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端技术</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/HomeWeb/Web/工具框架/" class="nav-link">工具框架</a></li><li class="dropdown-item"><!----> <a href="/HomeWeb/Web/VUE/" class="nav-link">VUE</a></li><li class="dropdown-item"><!----> <a href="/HomeWeb/Web/JavaScript/" class="nav-link">JavaScript</a></li><li class="dropdown-item"><!----> <a href="/HomeWeb/Web/Html&amp;CSS/" class="nav-link">Html&amp;CSS</a></li><li class="dropdown-item"><!----> <a href="/HomeWeb/Web/前端小知识/" class="nav-link">前端小知识</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">项目</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/HomeWeb/projects/乐优商城介绍.html" class="nav-link"></a></li><li class="dropdown-item"><!----> <a href="/HomeWeb/projects/乐优商城介绍.html" class="nav-link">（1）乐优商城项目</a></li></ul></div></div><div class="nav-item"><a href="/HomeWeb/guide/" class="nav-link">友链</a></div> <a href="https://github.com/GitHubWxw/HomeWeb" target="_blank" rel="noopener noreferrer" class="repo-link">
+    HomeWeb
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"/> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"/></svg></a></nav>  <ul class="sidebar-links"><li><a href="/HomeWeb/" class="sidebar-link">首页导读</a></li><li><a href="/HomeWeb/blog/Java实习总结.html" class="sidebar-link">1，Java实习总结</a></li><li><a href="/HomeWeb/Java/SpringBoot/springboot基础入门.html" class="sidebar-link">2，SpringBoot基础</a></li><li><a href="/HomeWeb/Java/数据库技术/SQL优化笔记.html" class="sidebar-link">3，SQL优化笔记</a></li><li><a href="/HomeWeb/projects/乐优商城介绍.html" class="sidebar-link">4，购物商城项目</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="mysqll的基本使用"><a href="#mysqll的基本使用" aria-hidden="true" class="header-anchor">#</a> MySQlL的基本使用</h3> <h4 id="（1）mysql-连接"><a href="#（1）mysql-连接" aria-hidden="true" class="header-anchor">#</a> （1）<a href="https://m.php.cn/manual/view/33968.html" target="_blank" rel="noopener noreferrer">MySQL 连接<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"/> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"/></svg></a></h4> <p><code>mysql -uroot -p123456</code> 或 <code>mysql -h 127.0.0.1 -u root -p</code></p> <h4 id="（2）mysql数据库与表显示、创建和删除"><a href="#（2）mysql数据库与表显示、创建和删除" aria-hidden="true" class="header-anchor">#</a> （2）<a href="https://m.php.cn/manual/view/33969.html" target="_blank" rel="noopener noreferrer">MySQL数据库与表显示、创建和删除<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"/> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"/></svg></a></h4> <ul><li><p>数据库显示：<strong>show databases;</strong></p></li> <li><p>创建数据库：<strong>create database 库名字;</strong></p></li> <li><p>删除数据库：<strong>drop database [IF EXISTS] 库名字;</strong></p></li> <li><p>选中数据库：<strong>use 库名;</strong></p></li> <li><p>显示数据表：<strong>show tables;</strong>[需要先选中数据库]</p></li> <li><p>显示表结构：<strong>desc 表名; 或者 describe 表名;</strong></p></li> <li><p>表创建：</p> <div class="language-mysql extra-class"><pre class="language-text"><code>CREATE TABLE `member` (
+  `uid` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '用户ID',
+  `nickname` char(16) NOT NULL DEFAULT '' COMMENT '昵称',
+  `sex` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '性别',
+  `birthday` date NOT NULL DEFAULT '0000-00-00' COMMENT '生日',
+  `qq` char(10) NOT NULL DEFAULT '' COMMENT 'qq号',
+  `score` mediumint(8) NOT NULL DEFAULT '0' COMMENT '用户积分',
+  `login` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '登录次数',
+  `reg_ip` bigint(20) NOT NULL DEFAULT '0' COMMENT '注册IP',
+  `reg_time` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '注册时间',
+  `last_login_ip` bigint(20) NOT NULL DEFAULT '0' COMMENT '最后登录IP',
+  `last_login_time` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '最后登录时间',
+  `status` tinyint(4) NOT NULL DEFAULT '0' COMMENT '会员状态',
+  PRIMARY KEY (`uid`),
+  KEY `status` (`status`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='会员表';
 
+实例解释：
+1，如果你不想字段为 NULL 可以设置字段的属性为 NOT NULL， 在操作数据库时如果输入该字段的数据为NULL ，
+会报错。
+2，AUTO_INCREMENT定义列为自增的属性，一般用于主键，数值会自动加1。
+3，PRIMARY KEY关键字用于定义列为主键。 您可以使用多列来定义主键，列间以逗号分隔。
+4，ENGINE 设置存储引擎，CHARSET 设置编码。
+</code></pre></div></li> <li><p>表删除：<strong>drop table 表名;</strong>
+####（3）<a href="https://m.php.cn/manual/view/33970.html" target="_blank" rel="noopener noreferrer">表复制备份及还原<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"/> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"/></svg></a></p></li> <li><p>复制表结构</p> <div class="language-mysql extra-class"><pre class="language-text"><code>1.1 含有主键等信息的完整表结构
+  CREATE table 新表名 LIKE book;
+1.2 只有表结构，没有主键等信息
+  create table 新表名 select * from books;
+  或
+  create table  新表名 as (select * from book);
+  或
+  create table 新表名 select * from books where 1=2;
+</code></pre></div></li> <li><p><strong>将旧表中的数据灌入新表</strong></p> <div class="language-mysql extra-class"><pre class="language-text"><code>INSERT INTO 新表 SELECT * FROM 旧表；
+</code></pre></div></li> <li><p><strong>输入创建表的DDL语句</strong></p> <div class="language-mysql extra-class"><pre class="language-text"><code>show create table 表名;
+</code></pre></div></li> <li><p><strong>清空表数据</strong></p> <div class="language-mysql extra-class"><pre class="language-text"><code>truncate table 表名;
+</code></pre></div></li></ul> <p>####(4) <a href="https://m.php.cn/manual/view/33971.html" target="_blank" rel="noopener noreferrer">数据库表中数据操作<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"/> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"/></svg></a></p> <div class="language-txt extra-class"><pre class="language-text"><code>创建表,查看表结构,查看表详细结构,修改表名,修改字段的数据类型,修改字段名,增加字段,删除字段,删除关联表
+（1）删除表的外键约束
+（2）删除没有被关联的普通表
+（3）删除被其他表关联的父表
+</code></pre></div><ul><li><p>创建表</p> <div class="language-mysql extra-class"><pre class="language-text"><code>CREATE TABLE 表名 （属性名 数据类型 [完整性约束条件]，
+属性名 数据类型 [完整性约束条件]，
+属性名 数据类型 [完整性约束条件]）
+
+完整性约束：“完整性约束条件”是指指定某些字段的某些特殊约束条件。
+下面是完整性约束条件：
+1，PRIMARY KEY 标识该属性为该表的主键，可以唯一的标识对应的元组
+2，FOREIGN KEY 标识该属性为该表的外键，是与之联系的某表的主键
+3，NOT NULL 标识该属性不能为空
+4，UNIQUE 标识该属性的值是唯一的
+5，AUTO_INCREMENT 标识该属性的值自动增加
+6，DEFAULT 为该属性设置默认值
+</code></pre></div></li> <li><p>查看表结构</p> <div class="language-mysql extra-class"><pre class="language-text"><code>show create table 表名
+show create table 表名 \G
+注意：\G增强显示可查看性
+</code></pre></div></li></ul> <h5 id="_1，表操作"><a href="#_1，表操作" aria-hidden="true" class="header-anchor">#</a> 1，表操作</h5> <ul><li><p>修改表名</p> <div class="language-mysql extra-class"><pre class="language-text"><code>alter table 旧表名 rename [to] 新表名；
+</code></pre></div></li> <li><p><strong>修改字段的数据类型：</strong></p> <div class="language-mysql extra-class"><pre class="language-text"><code>alter table 表名 modify 属性名 数据类型；
+</code></pre></div></li> <li><p><strong>修改字段名：</strong></p> <div class="language-mysql extra-class"><pre class="language-text"><code>alter table 表名 change 旧属性名 新属性名 新数据类型；
+注意：旧属性名参数指修改前的字段名，新属性名参数指修改后的字段名，如果不指定数据类型则数据类型不变。
+</code></pre></div></li> <li><p><strong>增加字段：</strong></p> <div class="language-mysql extra-class"><pre class="language-text"><code>alter table 表名 add 属性名1 数据类型 [完整性约束条件] [first] after 属性名2；
+</code></pre></div></li> <li><p><strong>删除字段：</strong></p> <div class="language-mysql extra-class"><pre class="language-text"><code>alter table 表名 drop 属性名；
+</code></pre></div></li></ul> <h4 id="_5-修改表中指定数据"><a href="#_5-修改表中指定数据" aria-hidden="true" class="header-anchor">#</a> (5) 修改表中指定数据</h4> <div class="language-mysql extra-class"><pre class="language-text"><code>UPDATE 表名称 SET 列名称 = 新值 WHERE 列名称 = 某值
+</code></pre></div><h4 id="_6-查询表"><a href="#_6-查询表" aria-hidden="true" class="header-anchor">#</a> (6) <a href="https://m.php.cn/manual/view/33973.html" target="_blank" rel="noopener noreferrer">查询表<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"/> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"/></svg></a></h4></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/HomeWeb/assets/js/app.447b4c85.js" defer></script><script src="/HomeWeb/assets/js/3.ed0b4588.js" defer></script><script src="/HomeWeb/assets/js/12.40f7ab5c.js" defer></script>
+  </body>
+</html>
+
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/GitHubWxw.github.io/img/alipay.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/GitHubWxw.github.io/img/weixin.png">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/GitHubWxw.github.io/2019/10/02/SQL优化详细笔记/">MySQL优化案例</a>
-	
-    </h1>
-  
+      </a>
+    </div>
+    
 
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          年少有伟
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="https://github.com/GitHubWxw/GitHubWxw.github.io/HomeWeb/Java/数据库技术/MySql基础.html" title="" target="_blank">https://github.com/GitHubWxw/GitHubWxw.github.io/HomeWeb/Java/数据库技术/MySql基础.html</a>
+        </li>
+        <li>
+          <strong>版权声明： </strong>
+          本博客所有文章除特别声明外，均采用 <a href="https://www.apache.org/licenses/LICENSE-2.0.html" rel="external nofollow" target="_blank">Apache License 2.0</a> 许可协议。转载请注明出处！
+        </li>
+      </ul>
+    </div>
+    
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">数据库优化</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">索引</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">锁机制</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">profiles分析</a>
-        		</li>
-      		
-		</ul>
-	</div>
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+    
 
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/GitHubWxw.github.io/categories/数据库-mysql//" class="article-tag-list-link color5">数据库-mysql</a>
-        		</li>
-      		
-		</ul>
-	</div>
+    
 
-
+    
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://github.com/GitHubWxw/GitHubWxw.github.io/HomeWeb/Java/数据库技术/MySql基础.html" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-  
-  
-    </div></section>
-  
 
-    
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#app"><span class="toc-number">1.</span> <span class="toc-text">JVM虚拟机</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#app"><span class="toc-number">2.</span> <span class="toc-text">Java并发编程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#app"><span class="toc-number">3.</span> <span class="toc-text">数据库技术</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#app"><span class="toc-number">4.</span> <span class="toc-text">Spring</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#app"><span class="toc-number">5.</span> <span class="toc-text">JVM虚拟机</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#app"><span class="toc-number">6.</span> <span class="toc-text">Java并发编程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#app"><span class="toc-number">7.</span> <span class="toc-text">数据库技术</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#app"><span class="toc-number">8.</span> <span class="toc-text">Spring</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mysqll的基本使用"><span class="toc-number"></span> <span class="toc-text"># MySQlL的基本使用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#（1）mysql-连接"><span class="toc-number">1.</span> <span class="toc-text"># （1）MySQL 连接 </span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#（2）mysql数据库与表显示、创建和删除"><span class="toc-number">2.</span> <span class="toc-text"># （2）MySQL数据库与表显示、创建和删除 </span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#_1，表操作"><span class="toc-number">2.1.</span> <span class="toc-text"># 1，表操作</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#_5-修改表中指定数据"><span class="toc-number">3.</span> <span class="toc-text"># (5) 修改表中指定数据</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#_6-查询表"><span class="toc-number">4.</span> <span class="toc-text"># (6) 查询表 </span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+
+
+
+
+
+
+
+  <div id="giteement-ctn"></div>
+  
+    <link rel="stylesheet" href="/GitHubWxw.github.io/lib/default.css">
+    <script src="/GitHubWxw.github.io/lib/giteement.browser.js"></script>
+  
+  <script>
+  <!-- id: "" -->
+  var giteement = new Giteement({
+    id: '20191123143739',
+    owner: 'JavaStudyWxw',
+    repo: 'YiliaPlus-ThemeComments',
+    backcall_uri: 'https://githubwxw.github.io',
+    oauth_uri: 'https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token',
+    oauth: {
+      client_id: 'c82b0cd78b807e5ad45ccf1c1d5e1ca66cde4b4370022a03c1b9ebc18f5ff566',
+      client_secret: '4a99fe558dbe22a61710294c38425a468d83f6276b3eb1a77c337e909fd2e290'
+    },
+  })
+  giteement.render('giteement-ctn')
+  </script>
+
+
+
+
+
+
 
 
           </div>
@@ -333,7 +531,7 @@
 		isPost: false,
 		isArchive: false,
 		isTag: false,
-		isCategory: true,
+		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
 		root: "/GitHubWxw.github.io/",
